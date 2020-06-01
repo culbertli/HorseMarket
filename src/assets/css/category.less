@@ -1,0 +1,38 @@
+#cateBox{display: grid;grid-template-columns: 0.8fr 2fr;}
+.cateLeft,.cateRight{height:100vh;overflow: hidden;ul{display: grid;}.content{padding-bottom: var(--subtab-height);}}
+.cateLeft{
+  ul{li{padding:15px 5px;text-align: center;font-size: 0.8rem;}
+    li.act{border-left: 2px solid var(--color-theme);color:var(--color-theme);
+      background-color: var(--color-background-s1);}
+  }
+}
+.cateRight{background-color: var(--color-background-s1);font-size: 0.6rem;
+  .cateDetail{padding:10px;display: none;
+    .headerPic{img{max-width: 100%;}padding:5px;margin-bottom: 10px;}
+    ul{grid-template-columns: 1fr 1fr 1fr;
+      li{padding:5px;text-align: center;
+        img{max-width: 100%;}
+        .text_box{display: block;padding:5px 0 10px;}
+      }
+    }
+  }
+  .cateDetail.act{display: block;}
+
+}
+.goodsList{height:100vh;overflow:hidden;
+  .content{padding-bottom: var(--subtab-height);.bottomtip{display: none;text-align: center;padding-bottom: 5px;}}
+  .goodsConent{display: grid;grid-template-columns: .5fr .5fr;padding:10px;
+    li{padding:5px;
+      img{max-width: 100%;}
+      .good_info{background-color: var(--color-background-s1);padding:5px;
+        .good_title{color:var(--color-title);height:2rem;width:100%;overflow:hidden; text-overflow:ellipsis;-webkit-line-clamp: 2;}
+        .slashprice{padding:5px 3px;}
+        .price.buy{color:var(--color-theme);display: grid;grid-template-columns: 1fr 0.6fr;padding:5px 0;
+          .buy_btn{border:1px solid var(--color-theme);text-align: center;border-radius: 3px;}
+          .text{font-size: 1rem;}
+          .buy_btn,.text{padding:3px 0;}
+        }
+      }
+    }
+  }
+}

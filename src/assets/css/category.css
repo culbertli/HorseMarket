@@ -1,0 +1,115 @@
+#cateBox {
+  display: grid;
+  grid-template-columns: 0.8fr 2fr;
+}
+.cateLeft,
+.cateRight {
+  height: 100vh;
+  overflow: hidden;
+}
+.cateLeft ul,
+.cateRight ul {
+  display: grid;
+}
+.cateLeft .content,
+.cateRight .content {
+  padding-bottom: var(--subtab-height);
+}
+.cateLeft ul li {
+  padding: 15px 5px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.cateLeft ul li.act {
+  border-left: 2px solid var(--color-theme);
+  color: var(--color-theme);
+  background-color: var(--color-background-s1);
+}
+.cateRight {
+  background-color: var(--color-background-s1);
+  font-size: 0.6rem;
+}
+.cateRight .cateDetail {
+  padding: 10px;
+  display: none;
+}
+.cateRight .cateDetail .headerPic {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.cateRight .cateDetail .headerPic img {
+  max-width: 100%;
+}
+.cateRight .cateDetail ul {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.cateRight .cateDetail ul li {
+  padding: 5px;
+  text-align: center;
+}
+.cateRight .cateDetail ul li img {
+  max-width: 100%;
+}
+.cateRight .cateDetail ul li .text_box {
+  display: block;
+  padding: 5px 0 10px;
+}
+.cateRight .cateDetail.act {
+  display: block;
+}
+.goodsList {
+  height: 100vh;
+  overflow: hidden;
+}
+.goodsList .content {
+  padding-bottom: var(--subtab-height);
+}
+.goodsList .content .bottomtip {
+  display: none;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.goodsList .goodsConent {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  padding: 10px;
+}
+.goodsList .goodsConent li {
+  padding: 5px;
+}
+.goodsList .goodsConent li img {
+  max-width: 100%;
+}
+.goodsList .goodsConent li .good_info {
+  background-color: var(--color-background-s1);
+  padding: 5px;
+}
+.goodsList .goodsConent li .good_info .good_title {
+  color: var(--color-title);
+  height: 2rem;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+.goodsList .goodsConent li .good_info .slashprice {
+  padding: 5px 3px;
+}
+.goodsList .goodsConent li .good_info .price.buy {
+  color: var(--color-theme);
+  display: grid;
+  grid-template-columns: 1fr 0.6fr;
+  padding: 5px 0;
+}
+.goodsList .goodsConent li .good_info .price.buy .buy_btn {
+  border: 1px solid var(--color-theme);
+  text-align: center;
+  border-radius: 3px;
+}
+.goodsList .goodsConent li .good_info .price.buy .text {
+  font-size: 1rem;
+}
+.goodsList .goodsConent li .good_info .price.buy .buy_btn,
+.goodsList .goodsConent li .good_info .price.buy .text {
+  padding: 3px 0;
+}

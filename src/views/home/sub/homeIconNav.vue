@@ -1,21 +1,21 @@
 <template>
-  <iconline>
-    <iconlineitem v-for="item in navs">
+  <iconNav>
+    <iconNavitem v-for="item in navs">
       <a :href="item.url">
         <img :src="item.icon" alt=""/>
         <span>{{item.navname}}</span>
       </a>
-    </iconlineitem>
-  </iconline>
+    </iconNavitem>
+  </iconNav>
 </template>
 
 <script>
-  import iconline from 'components/common/iconline/iconline'
-  import iconlineitem from 'components/common/iconline/iconlineitem'
+  import iconNav from 'components/common/iconNav/iconNav'
+  import iconNavitem from 'components/common/iconNav/iconNavitem'
   export default{
-    name: "homeIconline",
+    name: "homeIconNav",
     components:{
-      iconline,iconlineitem
+      iconNav,iconNavitem
     },
     props:{
       navs:{

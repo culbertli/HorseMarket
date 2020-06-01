@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <keep-alive><router-view v-if="$route.meta.keepAlive!==false"></router-view></keep-alive>
+    <router-view v-if="!$route.meta.keepAlive"></router-view>
     <subbar></subbar>
   </div>
 </template>
@@ -11,7 +12,7 @@
     name: 'App',
     components: {
       subbar
-    }
+    },
   }
 </script>
 

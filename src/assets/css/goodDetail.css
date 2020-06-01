@@ -1,0 +1,76 @@
+.infoBlock {
+  background-color: var(--color-background-s1);
+  padding: 10px 8px;
+}
+.mainInfo {
+  display: grid;
+  grid-template-columns: 3.5fr 0.4fr;
+  margin-top: -2px;
+  margin-bottom: 10px;
+}
+.mainInfo h1 {
+  color: var(--color-title);
+  margin: 0;
+  font-size: 0.95rem;
+}
+.mainInfo h3 {
+  color: var(--color-text);
+  font-size: 0.6rem;
+}
+.mainInfo h1,
+.mainInfo h2,
+.mainInfo h3 {
+  font-weight: normal;
+}
+.mainInfo .price span {
+  color: var(--color-theme);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.mainInfo .price s {
+  display: inline-block;
+  margin-left: 10px;
+}
+.mainInfo .share {
+  padding-top: 1rem;
+  text-align: center;
+  color: var(--color-theme);
+}
+.mainInfo .share span {
+  display: block;
+}
+.mainInfo h1,
+.mainInfo h3,
+.mainInfo .price,
+.mainInfo .express {
+  padding: 5px 0;
+}
+.mainInfo .express,
+.mainInfo s {
+  font-size: 0.4rem;
+  color: var(--color-text-light);
+}
+.member_btn {
+  border: 1px solid var(--color-theme);
+  padding: 2px 3px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 0.5rem;
+}
+.shopbtn {
+  text-align: center;
+  padding-top: 1rem;
+}
+.shopbtn span {
+  border: 1px solid var(--color-text);
+  padding: 5px 8px;
+  border-radius: 50px;
+}
+.detailImg {
+  padding: 0 5px;
+}
+.detailImg img {
+  display: block;
+  max-width: 100%;
+}
